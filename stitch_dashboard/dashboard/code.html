@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary": "#ffffff",
+              "tertiary-container": "#a4a298",
+              "primary-container": "#98a68e",
+              "secondary-fixed-dim": "#e3beba",
+              "on-error-container": "#93000a",
+              "surface-dim": "#d8dbd4",
+              "tertiary-fixed": "#e5e2d8",
+              "on-secondary-container": "#795b58",
+              "tertiary": "#605f56",
+              "inverse-on-surface": "#eff2ea",
+              "on-secondary-fixed-variant": "#5b403d",
+              "surface": "#f8faf3",
+              "outline": "#757870",
+              "secondary-fixed": "#ffdad6",
+              "primary": "#55624d",
+              "on-error": "#ffffff",
+              "on-primary": "#ffffff",
+              "secondary-container": "#fed7d2",
+              "on-tertiary-fixed": "#1c1c15",
+              "on-tertiary-container": "#393931",
+              "inverse-surface": "#2e312d",
+              "surface-container": "#ecefe8",
+              "primary-fixed": "#d9e7cd",
+              "primary-fixed-dim": "#bdcbb2",
+              "on-primary-container": "#2f3c29",
+              "on-primary-fixed-variant": "#3e4a37",
+              "error": "#ba1a1a",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#131e0e",
+              "background": "#f8faf3",
+              "surface-container-low": "#f2f4ed",
+              "on-surface-variant": "#444841",
+              "tertiary-fixed-dim": "#c9c7bc",
+              "surface-variant": "#e1e3dc",
+              "on-tertiary-fixed-variant": "#48473f",
+              "on-tertiary": "#ffffff",
+              "on-background": "#191c18",
+              "surface-tint": "#55624d",
+              "outline-variant": "#c5c8be",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#191c18",
+              "on-secondary-fixed": "#2b1614",
+              "surface-container-high": "#e7e9e2",
+              "surface-bright": "#f8faf3",
+              "secondary": "#755754",
+              "inverse-primary": "#bdcbb2",
+              "surface-container-highest": "#e1e3dc"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-zenith-gradient {
+            background: linear-gradient(135deg, #f8faf3 0%, #f2f4ed 50%, #fed7d2 100%);
+        }
+        .glass-pill {
+            background: rgba(248, 250, 243, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .progress-ring-circle {
+            transition: stroke-dashoffset 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+        .breathing-circle {
+            box-shadow: 0 0 40px rgba(85, 98, 77, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-zenith-gradient min-h-screen text-on-background pb-32">
+<!-- Top AppBar -->
+<header class="sticky top-0 z-50 px-6 py-4 flex items-center justify-between glass-pill">
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="text-xl font-headline tracking-tight text-primary font-medium">Zenith</span>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-highest">
+<span class="material-symbols-outlined text-3xl flex items-center justify-center h-full text-outline" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<main class="max-w-2xl mx-auto px-6 pt-12">
+<!-- Hero Section -->
+<section class="mb-14">
+<h1 class="text-5xl md:text-6xl font-headline font-light text-primary tracking-tight leading-tight">
+                Good morning,<br/>Sarah
+            </h1>
+<p class="mt-4 text-on-surface-variant font-body tracking-wide">Take a moment to center yourself today.</p>
+</section>
+<!-- Daily Check-In Bento Section -->
+<section class="mb-14 grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Breathing Widget -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 flex flex-col items-center justify-center space-y-6 shadow-[0_40px_40px_-15px_rgba(85,98,77,0.06)]">
+<div class="text-center">
+<h3 class="text-sm font-label uppercase tracking-widest text-outline">Focus</h3>
+<p class="text-lg font-headline text-primary">Breathe</p>
+</div>
+<div class="w-32 h-32 rounded-full bg-primary-fixed flex items-center justify-center breathing-circle border-4 border-surface">
+<div class="w-20 h-20 rounded-full bg-primary opacity-20"></div>
+</div>
+<p class="text-sm text-on-surface-variant italic">Inhale deeply...</p>
+</div>
+<!-- Stress Slider Widget -->
+<div class="bg-surface-container-low rounded-2xl p-8 flex flex-col justify-between">
+<div>
+<h3 class="text-sm font-label uppercase tracking-widest text-outline">Check-in</h3>
+<p class="text-2xl font-headline text-on-surface mt-1">How is your stress level?</p>
+</div>
+<div class="mt-8">
+<input class="w-full h-1.5 bg-surface-container-highest rounded-full appearance-none cursor-pointer accent-primary" max="10" min="1" type="range" value="3"/>
+<div class="flex justify-between mt-3 text-xs font-label text-outline">
+<span>Calm</span>
+<span>High</span>
+</div>
+</div>
+<div class="mt-6 flex items-center gap-3 text-secondary">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="text-sm font-medium">Listening to your heart rhythm</span>
+</div>
+</div>
+</section>
+<!-- Metrics Section (Rings) -->
+<section class="mb-14">
+<h2 class="text-2xl font-headline text-primary mb-8">Daily Vitality</h2>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<!-- Sleep -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 flex flex-col items-center shadow-[0_10px_30px_rgba(85,98,77,0.03)]">
+<div class="relative w-24 h-24 mb-4">
+<svg class="w-full h-full">
+<circle class="text-surface-container-highest" cx="48" cy="48" fill="transparent" r="40" stroke="currentColor" stroke-width="8"></circle>
+<circle class="progress-ring-circle" cx="48" cy="48" fill="transparent" r="40" stroke="url(#primaryGradient)" stroke-dasharray="251.2" stroke-dashoffset="60" stroke-linecap="round" stroke-width="8"></circle>
+<defs>
+<lineargradient id="primaryGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" style="stop-color:#55624d"></stop>
+<stop offset="100%" style="stop-color:#98a68e"></stop>
+</lineargradient>
+</defs>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="bedtime">bedtime</span>
+</div>
+</div>
+<span class="text-xs font-label text-outline uppercase tracking-wider">Sleep</span>
+<span class="text-lg font-headline text-on-surface">7h 20m</span>
+</div>
+<!-- Steps -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 flex flex-col items-center shadow-[0_10px_30px_rgba(85,98,77,0.03)]">
+<div class="relative w-24 h-24 mb-4">
+<svg class="w-full h-full">
+<circle class="text-surface-container-highest" cx="48" cy="48" fill="transparent" r="40" stroke="currentColor" stroke-width="8"></circle>
+<circle class="progress-ring-circle" cx="48" cy="48" fill="transparent" r="40" stroke="url(#primaryGradient)" stroke-dasharray="251.2" stroke-dashoffset="100" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="steps">steps</span>
+</div>
+</div>
+<span class="text-xs font-label text-outline uppercase tracking-wider">Steps</span>
+<span class="text-lg font-headline text-on-surface">6,432</span>
+</div>
+<!-- Hydration -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 flex flex-col items-center shadow-[0_10px_30px_rgba(85,98,77,0.03)]">
+<div class="relative w-24 h-24 mb-4">
+<svg class="w-full h-full">
+<circle class="text-surface-container-highest" cx="48" cy="48" fill="transparent" r="40" stroke="currentColor" stroke-width="8"></circle>
+<circle class="progress-ring-circle" cx="48" cy="48" fill="transparent" r="40" stroke="url(#primaryGradient)" stroke-dasharray="251.2" stroke-dashoffset="180" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="water_drop">water_drop</span>
+</div>
+</div>
+<span class="text-xs font-label text-outline uppercase tracking-wider">Water</span>
+<span class="text-lg font-headline text-on-surface">1.2L</span>
+</div>
+</div>
+</section>
+<!-- Insights Preview -->
+<section class="mb-14">
+<div class="bg-secondary-container rounded-2xl p-8 flex items-center justify-between overflow-hidden relative">
+<div class="z-10">
+<h3 class="text-on-secondary-container font-headline text-xl mb-2">Weekly Ritual</h3>
+<p class="text-on-secondary-container/80 max-w-[200px] text-sm leading-relaxed">You've reached your mindfulness goal 4 days in a row.</p>
+</div>
+<div class="absolute -right-4 top-1/2 -translate-y-1/2 opacity-20">
+<span class="material-symbols-outlined text-9xl text-on-secondary-container" data-icon="stars" data-weight="fill">stars</span>
+</div>
+</div>
+</section>
+</main>
+<!-- FAB -->
+<button class="fixed bottom-28 right-6 w-14 h-14 rounded-2xl bg-primary text-on-primary shadow-xl flex items-center justify-center active:scale-95 transition-transform z-40">
+<span class="material-symbols-outlined text-2xl" data-icon="add">add</span>
+</button>
+<!-- Floating Bottom Navigation -->
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md glass-pill rounded-full p-2 flex items-center justify-around z-50">
+<a class="flex flex-col items-center p-3 text-primary" href="#">
+<span class="material-symbols-outlined" data-icon="home_health" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home_health</span>
+<span class="text-[10px] mt-1 font-label">Dashboard</span>
+</a>
+<a class="flex flex-col items-center p-3 text-outline hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="text-[10px] mt-1 font-label">Insights</span>
+</a>
+<a class="flex flex-col items-center p-3 text-outline hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="text-[10px] mt-1 font-label">Community</span>
+</a>
+<a class="flex flex-col items-center p-3 text-outline hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="text-[10px] mt-1 font-label">Settings</span>
+</a>
+</nav>
+</body></html>

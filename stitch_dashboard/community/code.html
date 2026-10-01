@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary": "#ffffff",
+              "tertiary-container": "#a4a298",
+              "primary-container": "#98a68e",
+              "secondary-fixed-dim": "#e3beba",
+              "on-error-container": "#93000a",
+              "surface-dim": "#d8dbd4",
+              "tertiary-fixed": "#e5e2d8",
+              "on-secondary-container": "#795b58",
+              "tertiary": "#605f56",
+              "inverse-on-surface": "#eff2ea",
+              "on-secondary-fixed-variant": "#5b403d",
+              "surface": "#f8faf3",
+              "outline": "#757870",
+              "secondary-fixed": "#ffdad6",
+              "primary": "#55624d",
+              "on-error": "#ffffff",
+              "on-primary": "#ffffff",
+              "secondary-container": "#fed7d2",
+              "on-tertiary-fixed": "#1c1c15",
+              "on-tertiary-container": "#393931",
+              "inverse-surface": "#2e312d",
+              "surface-container": "#ecefe8",
+              "primary-fixed": "#d9e7cd",
+              "primary-fixed-dim": "#bdcbb2",
+              "on-primary-container": "#2f3c29",
+              "on-primary-fixed-variant": "#3e4a37",
+              "error": "#ba1a1a",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#131e0e",
+              "background": "#f8faf3",
+              "surface-container-low": "#f2f4ed",
+              "on-surface-variant": "#444841",
+              "tertiary-fixed-dim": "#c9c7bc",
+              "surface-variant": "#e1e3dc",
+              "on-tertiary-fixed-variant": "#48473f",
+              "on-tertiary": "#ffffff",
+              "on-background": "#191c18",
+              "surface-tint": "#55624d",
+              "outline-variant": "#c5c8be",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#191c18",
+              "on-secondary-fixed": "#2b1614",
+              "surface-container-high": "#e7e9e2",
+              "surface-bright": "#f8faf3",
+              "secondary": "#755754",
+              "inverse-primary": "#bdcbb2",
+              "surface-container-highest": "#e1e3dc"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1rem", "2xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8faf3; color: #191c18; }
+      .headline { font-family: 'Manrope', sans-serif; }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(248, 250, 243, 0.7);
+        backdrop-filter: blur(20px);
+      }
+      .asymmetric-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 2.75rem;
+      }
+      @media (max-width: 768px) {
+        .asymmetric-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-32">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-50 bg-surface/80 backdrop-blur-md px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer">menu</span>
+<h1 class="headline text-2xl font-extrabold tracking-tight text-primary">Zenith</h1>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl cursor-pointer">account_circle</span>
+</div>
+</header>
+<main class="max-w-6xl mx-auto px-6 pt-12">
+<!-- Hero Mood Moment -->
+<section class="mb-16">
+<h2 class="headline text-5xl md:text-6xl font-light text-primary mb-2">Community</h2>
+<p class="text-on-surface-variant text-lg tracking-wide">Growing together in shared stillness.</p>
+</section>
+<!-- Main Feed & Discovery Layout -->
+<div class="asymmetric-grid">
+<!-- Left Column: The Feed -->
+<div class="space-y-11">
+<!-- Prompt Card: Morning Mindfulness -->
+<article class="bg-surface-container-lowest rounded-2xl p-8 shadow-sm">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">spa</span>
+</div>
+<div>
+<h3 class="font-semibold text-primary">Morning Mindfulness</h3>
+<p class="text-xs text-on-surface-variant">Daily Prompt • 2h ago</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant">more_horiz</span>
+</div>
+<p class="text-xl leading-relaxed text-on-surface mb-8 italic">
+                        "What is one small thing you can notice today that usually goes unseen?"
+                    </p>
+<div class="flex items-center gap-6">
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-sm">124</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="text-sm">42</span>
+</button>
+</div>
+</article>
+<!-- Achievement Card -->
+<article class="bg-secondary-container rounded-2xl p-8 relative overflow-hidden">
+<div class="relative z-10">
+<span class="inline-block px-3 py-1 bg-on-secondary rounded-full text-[10px] font-bold tracking-widest uppercase text-secondary mb-4">Milestone reached</span>
+<h3 class="headline text-3xl text-on-secondary-container mb-2">10,000 Collective Breaths</h3>
+<p class="text-on-secondary-container/80 mb-6 max-w-sm">Our community just hit a major mindfulness milestone. Thank you for being part of the journey.</p>
+<div class="flex -space-x-3">
+<img class="w-10 h-10 rounded-full border-2 border-on-secondary object-cover" data-alt="Profile picture of community member" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDvmbQdyPotP7MzfgtZAGzcNEI5LCcoVaryK89TJPHtj9Xm-zlIPEY-Ijongyqv5-ALZMz6t-4vq2u6t0OFW6xbPo_YwoqEqhml2DVMLoQ3YE4J4x9xlBySb3eozrUO-MfeC0xTiJfkIMOC3K2sl73VO7CEDkxaOWoCs8QBo8dCtybNbZ-Rg3xmCcfD7ysg9ipJY3mk_isVms0qbt_TxEWFCjnfHWf1Vp50eCYJLcZad0BaI5Ps0uSJhe93jyWglV4F4ICdU6PGLY"/>
+<img class="w-10 h-10 rounded-full border-2 border-on-secondary object-cover" data-alt="Profile picture of community member" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2ZinoSuykLMrGzkbGyKf99bmiFxCGft_XSlewxP6hxRDXy5dVegZhMjCgbKzoajuwB9HVA6ooVyHnd3PsaYtq1WHtENpYBw9QpsDRP5BXQHQykOJ-Y6IeLsi2mTFdzoqa0t0MeqAnR_-RNLlESvgnVBWxdFZslFA8YA1ifbisS2Ura8bDoexmcOdKau5ZhBaQNu0RmuimpwsevcqQHmEPP1HSIrkmCIkNkLpYcAZNnVZR-aEkzMckDWzmZjy-_0b2ZL_67fEH_U4"/>
+<img class="w-10 h-10 rounded-full border-2 border-on-secondary object-cover" data-alt="Profile picture of community member" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcHsHJw_X7WiBjO7ysCLU7xSfGEq718JHQCOk1cRGXQ_Sh54O6K3l4VFD-JUXdwasTZcckApabIje_fZ3HRKOOgvRhXIyRl3GqUPR_GkYlDJUA4bvmRnK_BycNF8c-7qhpl3hT8JgS1JSckqy61O8slpMThXE-rVALkfvmfPBwBmLBS02W13N9een8Hery1VF00p1rAA3n94YuxRe84SRdNeCPww96FxKFwMk-ZtoTnw2d8ZbxP0ZiMhcQ6DPDjvPyDhC-P2lWCdo"/>
+<div class="w-10 h-10 rounded-full bg-on-secondary flex items-center justify-center text-xs font-bold text-secondary border-2 border-on-secondary">+9k</div>
+</div>
+</div>
+<div class="absolute -right-8 -bottom-8 w-48 h-48 bg-on-secondary opacity-20 rounded-full blur-3xl"></div>
+</article>
+<!-- Wellness Tip Post -->
+<article class="bg-surface-container-low rounded-2xl overflow-hidden">
+<img class="w-full h-64 object-cover" data-alt="Close up of a green plant with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqwObOMNCrm6YBTxwHlEPWlhUVis99TKKoA3PrQN7ZsOoaUhX8lLGfpaam5Sm3ZmO_4xUbNG4HT0wp0_eHnPQT7xMVK1HRF8a88T8SydxzH0R63hrquVflY9Tw4wlSkZNSA2mlr774m2KRm6ZkAGMmsmdZGCEJzrrup-Qriki8PgIGGuyH4JiD0ci6wYqkkGLjDaO1QgvodEUSujM8T2Gqzz_m9xDVT2WhHBuWpWA9UiM2FszDsq_v0txeQs2cRuqlYS8w0ZYvwds"/>
+<div class="p-8">
+<div class="flex items-center gap-3 mb-4">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Portrait of Julian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxjYBFS3JpP5ZU2ptiWSsrSS5eB6FFtbiXb5klASUAmx2lrxQv8dEgfsvLtzT_fJh0bBFTIa4lsCQdde1-fGOWXRnEYQ7l0osS4LPd2Q8_iFm3KAj5zihY5j1DW8RfbNuBWP5J5YKHIfJCxgp9XiCj9KGKtk3AjzD4Ja3weLRFhKHaLGsrtYm6ep_dId4aVS8T3snEgmOnj_Ftvgey47DkVXJTyj4N6K-4AVWr69B924Tm2m9hzdAetyH2rr_SPIsO8887UvPGDxw"/>
+<div>
+<h4 class="text-sm font-semibold text-on-surface">Julian M.</h4>
+<p class="text-[10px] text-on-surface-variant">Wellness Guide</p>
+</div>
+</div>
+<h3 class="text-xl font-medium text-primary mb-3">The Art of Digital Sunset</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Try turning off all screens 45 minutes before sleep. Read a physical book or try some light stretching. Your circadian rhythm will thank you.</p>
+<div class="flex items-center justify-between border-t border-outline-variant/10 pt-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer">favorite</span>
+<span class="material-symbols-outlined text-outline cursor-pointer">chat_bubble</span>
+<span class="material-symbols-outlined text-outline cursor-pointer">share</span>
+</div>
+<span class="material-symbols-outlined text-outline cursor-pointer">bookmark</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Right Column: Community Pulse -->
+<aside class="space-y-11">
+<section class="bg-surface-container p-8 rounded-2xl">
+<h3 class="headline text-xl text-primary mb-6">Active Circles</h3>
+<div class="space-y-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary">self_improvement</span>
+</div>
+<div>
+<p class="font-medium text-sm">Zen Seekers</p>
+<p class="text-xs text-on-surface-variant">1.2k members</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary">chevron_right</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary">forest</span>
+</div>
+<div>
+<p class="font-medium text-sm">Nature Walkers</p>
+<p class="text-xs text-on-surface-variant">850 members</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary">chevron_right</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary">water_drop</span>
+</div>
+<div>
+<p class="font-medium text-sm">Flow State</p>
+<p class="text-xs text-on-surface-variant">2.4k members</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary">chevron_right</span>
+</div>
+</div>
+</section>
+<section class="bg-primary-fixed/30 p-8 rounded-2xl border border-primary-fixed">
+<h3 class="headline text-xl text-on-primary-fixed-variant mb-4">Pulse Tracker</h3>
+<p class="text-sm text-on-primary-fixed-variant/70 mb-6">The community is feeling <strong>Calm</strong> today.</p>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden mb-2">
+<div class="h-full bg-primary w-[78%] rounded-full"></div>
+</div>
+<div class="flex justify-between text-[10px] text-on-surface-variant font-bold tracking-widest uppercase">
+<span>Restless</span>
+<span>Tranquil</span>
+</div>
+</section>
+<!-- Featured Member -->
+<section class="text-center p-8">
+<div class="relative inline-block mb-4">
+<img class="w-24 h-24 rounded-full object-cover border-4 border-surface-container-high" data-alt="Featured community member portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1kBpyokoFtUfFpY9HUp0ciT3eFN2EaIAHkM0EjVS1Fms3Wnyy3txQDVW6bCkMf_i3hnlkC8Vpo8jT7TxWStcqrAbuy0-TN3ETuL6DyMeWPAf4yqvmMbwKmrqPLkpCLQguTLVMsMIUsQaLcaYYWtazV8VP4NUOWBGQ8SEwdi2gBu2qDGVzTm6LL6n8p6six57jiD0Veygl8flsfypdkbr6PiDOk63h-VqYJlsViGXNzPa3U-ztsYzLTxKCZzYiutZxPp3prAQXfwY"/>
+<div class="absolute bottom-0 right-0 w-8 h-8 bg-secondary-container rounded-full flex items-center justify-center border-2 border-surface">
+<span class="material-symbols-outlined text-xs text-secondary" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+</div>
+<h4 class="headline text-lg text-on-surface">Sienna Grey</h4>
+<p class="text-xs text-on-surface-variant mb-4">Community Star • 30 Day Streak</p>
+<button class="px-6 py-2 bg-primary text-on-primary rounded-full text-xs font-semibold tracking-wide hover:bg-primary/90 transition-all">View Story</button>
+</section>
+</aside></div>
+</main>
+<!-- Floating Action Button -->
+<button class="fixed bottom-24 right-8 w-14 h-14 bg-primary text-on-primary rounded-2xl shadow-lg flex items-center justify-center transition-transform hover:scale-110 active:scale-95 z-50">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+<!-- Floating Bottom Navigation -->
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md glass-nav rounded-full px-6 py-3 flex items-center justify-between shadow-xl z-50 border border-white/20">
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">home_health</span>
+<span class="text-[10px] font-bold text-outline group-hover:text-primary transition-colors">Dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">analytics</span>
+<span class="text-[10px] font-bold text-outline group-hover:text-primary transition-colors">Insights</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">group</span>
+<span class="text-[10px] font-bold text-primary">Community</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">settings</span>
+<span class="text-[10px] font-bold text-outline group-hover:text-primary transition-colors">Settings</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,17 @@
+# Node / Client
+client/node_modules/
+client/dist/
+client/.env.local
+
+# Python / Flask Server
+server/.venv/
+server/__pycache__/
+server/*.pyc
+server/.env
+server/database/*.db
+server/database/*.sqlite
+
+# Antigravity / IDE / OS
+.DS_Store
+Thumbs.db
+*.log

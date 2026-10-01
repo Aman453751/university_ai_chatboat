@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary": "#ffffff",
+              "tertiary-container": "#a4a298",
+              "primary-container": "#98a68e",
+              "secondary-fixed-dim": "#e3beba",
+              "on-error-container": "#93000a",
+              "surface-dim": "#d8dbd4",
+              "tertiary-fixed": "#e5e2d8",
+              "on-secondary-container": "#795b58",
+              "tertiary": "#605f56",
+              "inverse-on-surface": "#eff2ea",
+              "on-secondary-fixed-variant": "#5b403d",
+              "surface": "#f8faf3",
+              "outline": "#757870",
+              "secondary-fixed": "#ffdad6",
+              "primary": "#55624d",
+              "on-error": "#ffffff",
+              "on-primary": "#ffffff",
+              "secondary-container": "#fed7d2",
+              "on-tertiary-fixed": "#1c1c15",
+              "on-tertiary-container": "#393931",
+              "inverse-surface": "#2e312d",
+              "surface-container": "#ecefe8",
+              "primary-fixed": "#d9e7cd",
+              "primary-fixed-dim": "#bdcbb2",
+              "on-primary-container": "#2f3c29",
+              "on-primary-fixed-variant": "#3e4a37",
+              "error": "#ba1a1a",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#131e0e",
+              "background": "#f8faf3",
+              "surface-container-low": "#f2f4ed",
+              "on-surface-variant": "#444841",
+              "tertiary-fixed-dim": "#c9c7bc",
+              "surface-variant": "#e1e3dc",
+              "on-tertiary-fixed-variant": "#48473f",
+              "on-tertiary": "#ffffff",
+              "on-background": "#191c18",
+              "surface-tint": "#55624d",
+              "outline-variant": "#c5c8be",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#191c18",
+              "on-secondary-fixed": "#2b1614",
+              "surface-container-high": "#e7e9e2",
+              "surface-bright": "#f8faf3",
+              "secondary": "#755754",
+              "inverse-primary": "#bdcbb2",
+              "surface-container-highest": "#e1e3dc"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1rem", "2xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-pill {
+            background: rgba(248, 250, 243, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .shadow-ambient {
+            box-shadow: 0 20px 40px -10px rgba(85, 98, 77, 0.06);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 px-6 py-4 flex items-center justify-between bg-surface/80 backdrop-blur-md">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-2xl">menu</span>
+<h1 class="font-headline text-xl font-bold tracking-tight text-primary">Zenith</h1>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-primary text-3xl">account_circle</span>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-6 space-y-10 mt-4">
+<!-- Hero Summary Section -->
+<section class="space-y-4">
+<h2 class="font-headline text-5xl font-extrabold text-primary leading-tight max-w-lg">
+                Your week in review.
+            </h2>
+<div class="flex items-center gap-3 py-2 px-4 bg-secondary-container/30 w-fit rounded-full">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">colors_spark</span>
+<p class="text-on-secondary-container font-medium text-sm">You've slept 15% better this week</p>
+</div>
+</section>
+<!-- Insights Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+<!-- Sleep Trends: Wide Line Graph Card -->
+<div class="md:col-span-4 bg-surface-container-low rounded-2xl p-8 space-y-6 flex flex-col justify-between min-h-[320px]">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-sm font-semibold uppercase tracking-widest text-on-surface-variant mb-1">Sleep Quality</h3>
+<p class="text-2xl font-headline font-bold text-primary">7h 42m Average</p>
+</div>
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full text-xs font-bold text-primary">Weekly</span>
+</div>
+</div>
+<!-- Abstract Line Graph -->
+<div class="relative h-32 w-full flex items-end gap-1">
+<div class="flex-1 bg-primary/10 rounded-t-lg transition-all hover:bg-primary/20" style="height: 65%;"></div>
+<div class="flex-1 bg-primary/10 rounded-t-lg" style="height: 75%;"></div>
+<div class="flex-1 bg-primary/10 rounded-t-lg" style="height: 60%;"></div>
+<div class="flex-1 bg-primary/10 rounded-t-lg" style="height: 85%;"></div>
+<div class="flex-1 bg-primary/30 rounded-t-lg" style="height: 95%;"></div>
+<div class="flex-1 bg-primary/10 rounded-t-lg" style="height: 70%;"></div>
+<div class="flex-1 bg-primary/10 rounded-t-lg" style="height: 80%;"></div>
+<!-- Decorative Svg Line -->
+<svg class="absolute inset-0 h-full w-full pointer-events-none" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M0,70 Q15,40 30,50 T60,20 T100,30" fill="none" stroke="url(#gradient-primary)" stroke-width="2"></path>
+<defs>
+<lineargradient id="gradient-primary" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" style="stop-color:#55624d;stop-opacity:1"></stop>
+<stop offset="100%" style="stop-color:#98a68e;stop-opacity:1"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="flex justify-between text-[10px] text-outline uppercase tracking-tighter">
+<span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+</div>
+</div>
+<!-- Stress Level: Vertical Card -->
+<div class="md:col-span-2 bg-surface-container-low rounded-2xl p-8 flex flex-col justify-between">
+<div>
+<h3 class="text-sm font-semibold uppercase tracking-widest text-on-surface-variant mb-1">Stress</h3>
+<p class="text-2xl font-headline font-bold text-secondary">Low</p>
+</div>
+<div class="relative w-full aspect-square flex items-center justify-center">
+<!-- Progress Ring -->
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-highest" cx="50%" cy="50%" fill="transparent" r="40%" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-secondary" cx="50%" cy="50%" fill="transparent" r="40%" stroke="currentColor" stroke-dasharray="251" stroke-dashoffset="180" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center flex-col">
+<span class="text-2xl font-headline font-bold text-on-surface">24%</span>
+<span class="text-[10px] uppercase text-outline">daily</span>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                    Your heart rate variability indicates a high state of recovery today.
+                </p>
+</div>
+<!-- Activity Trends: Grid Bottom -->
+<div class="md:col-span-3 bg-surface-container-low rounded-2xl p-8 flex flex-col justify-between min-h-[240px]">
+<div class="space-y-1">
+<h3 class="text-sm font-semibold uppercase tracking-widest text-on-surface-variant">Active Minutes</h3>
+<p class="text-3xl font-headline font-bold text-primary">420 <span class="text-lg font-medium text-outline">min</span></p>
+</div>
+<div class="flex items-end gap-2 h-24">
+<div class="w-full bg-primary-fixed-dim/40 rounded-full h-[40%]"></div>
+<div class="w-full bg-primary-fixed-dim/40 rounded-full h-[60%]"></div>
+<div class="w-full bg-primary-fixed-dim/40 rounded-full h-[85%]"></div>
+<div class="w-full bg-primary-fixed-dim/40 rounded-full h-[45%]"></div>
+<div class="w-full bg-primary-fixed-dim/40 rounded-full h-[70%]"></div>
+<div class="w-full bg-primary rounded-full h-[95%]"></div>
+</div>
+<p class="text-xs font-medium text-primary">Peak performance on Friday</p>
+</div>
+<!-- Focus Stats: Sub-Card -->
+<div class="md:col-span-3 bg-secondary-container/20 rounded-2xl p-8 flex items-center gap-6">
+<div class="w-16 h-16 rounded-2xl bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">self_improvement</span>
+</div>
+<div class="space-y-1">
+<h3 class="text-sm font-semibold uppercase tracking-widest text-on-surface-variant">Focus Sessions</h3>
+<p class="text-xl font-headline font-bold text-on-secondary-container">12 sessions completed</p>
+<p class="text-sm text-outline">8% more than last month</p>
+</div>
+</div>
+</div>
+<!-- Insight Narrative -->
+<section class="bg-surface-container-lowest border border-outline-variant/10 rounded-2xl p-8 shadow-ambient">
+<div class="max-w-2xl space-y-4">
+<h4 class="font-headline text-2xl font-bold text-primary">The Zenith Perspective</h4>
+<p class="text-on-surface-variant leading-relaxed">
+                    Over the last 30 days, your consistent bedtime has directly correlated with a reduction in resting heart rate. We noticed your stress peaks typically occur on Tuesday afternoons—consider scheduling a brief <span class="text-secondary font-bold">Zenith Focus</span> session then to maintain your balance.
+                </p>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-bold text-sm flex items-center gap-2 mt-4">
+                    Full Report
+                    <span class="material-symbols-outlined text-sm">trending_up</span>
+</button>
+</div>
+</section>
+</main>
+<!-- FAB -->
+<div class="fixed bottom-28 right-6 z-40">
+<button class="w-14 h-14 bg-primary text-on-primary rounded-2xl shadow-lg flex items-center justify-center active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl">add</span>
+</button>
+</div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-md">
+<div class="glass-pill rounded-full py-4 px-8 flex justify-between items-center shadow-ambient">
+<div class="flex flex-col items-center gap-1 group cursor-pointer opacity-40 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-2xl">home_health</span>
+<span class="text-[10px] font-bold tracking-tighter uppercase">Dashboard</span>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer text-primary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="text-[10px] font-bold tracking-tighter uppercase">Insights</span>
+<div class="w-1 h-1 bg-primary rounded-full mt-0.5"></div>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer opacity-40 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-2xl">group</span>
+<span class="text-[10px] font-bold tracking-tighter uppercase">Community</span>
+</div>
+<div class="flex flex-col items-center gap-1 group cursor-pointer opacity-40 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-2xl">settings</span>
+<span class="text-[10px] font-bold tracking-tighter uppercase">Settings</span>
+</div>
+</div>
+</nav>
+<!-- Floating Decor (Subtle) -->
+<div class="fixed top-[20%] right-[-5%] w-64 h-64 bg-primary-fixed-dim/10 blur-[100px] rounded-full pointer-events-none -z-10"></div>
+<div class="fixed bottom-[10%] left-[-5%] w-80 h-80 bg-secondary-fixed/10 blur-[100px] rounded-full pointer-events-none -z-10"></div>
+</body></html>
